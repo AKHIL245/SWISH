@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+ long long price,percentage,discount;
+ scanf("%lld%lld",&price,&discount);
+ long long INR=price;
+ while(1)
+ {
+  percentage=((price*discount)/100);
+  if(percentage==0)
+  {
+   break;
+  }
+  else
+  {
+   price=price-percentage;
+   INR=INR+price;
+  }
+ }
+  printf("%lld",ans);
+}
+  
